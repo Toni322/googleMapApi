@@ -22,7 +22,9 @@ public class GoogleAPI extends AbstractSample {
         baseUrl = "http://maps.googleapis.com/maps/api/geocode/json";
         params = Maps.newHashMap();
        readFromFile = new ReadFromFile();
-        filename = "qwer.txt";
+
+        filename = "qwer.txt"; // файл з якого беруться дані
+
         towns = readFromFile.read(filename);
         params.put("sensor", "false");
 
